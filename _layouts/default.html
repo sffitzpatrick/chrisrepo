@@ -22,24 +22,22 @@
       </header>
 
       <div id="banner">
-        <span id="logo"></span>
         <nav id=“main-navigation”>
-          <a href="/" class="button"><strong>Directory of Resources</strong></a>
-          <a href="/about/" class="button"><strong>About</strong></a>
+          <a href="/" class="button">Directory of Resources</a>
+          <a href="/about/" class="button">About</a>
         </nav>
-      </div><!-- end banner -->
+      </div>
         <!-- end banner -->
 
     <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
+
       <section>
         {{ content }}
-
       </section>
+
       <footer>
         {% if site.github.is_project_page %}
+          <p>&copy; 2019</p>
           <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
