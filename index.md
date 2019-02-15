@@ -2,7 +2,7 @@
 title: Home
 layout: default
 ---
-# Language Learning Resources
+# Directory of Resources
 
 ## Duolingo
 
