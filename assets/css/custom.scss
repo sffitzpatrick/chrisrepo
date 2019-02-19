@@ -5,17 +5,8 @@ header h1 {
    overflow: visible;
    color: #FFE788;
  }
-h1#page-title {
-
-   color: #fafafa;
-   background-color: #4276b6;
-   text-align: center;
-   border: 1px solid #dba500;
-h1 {
-font: 48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
- }
  .page-title {
-  font: 48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 48px Helvetica Arial sans-serif;
   color: #fafafa;
   background-color: #4276b6;
   text-align: center;
@@ -44,5 +35,5 @@ img {
    margin: 5% auto;
 }
 footer {
-   display: block;
+   display:block;
  }
