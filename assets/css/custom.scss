@@ -1,16 +1,17 @@
 ---
 ---
 header h1 {
+   max-width: 100%;
    font-size: 50px;
    overflow: visible;
    color: #FFE788;
 }
 .page-title {
-  font: 48px Helvetica Arial sans-serif;
-  color: #fafafa;
-  background-color: #4276b6;
-  text-align: center;
-  border: 1px solid #dba500;
+   max-width: 100%;
+   color: #fafafa;
+   background-color: #4276b6;
+   text-align: center;
+   border: 1px solid #dba500;
 }
  h2 {
    text-decoration: underline;
@@ -26,7 +27,6 @@ header h1 {
   @media all and (min-width: 960px) {
     width: 66%;
     float: left;
-    padding-right: 20px;
   }
 }
 .img-left {
