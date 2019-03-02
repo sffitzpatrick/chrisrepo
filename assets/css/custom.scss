@@ -6,6 +6,13 @@ header h1 {
    overflow: visible;
    color: #FFE788;
 }
+@media screen and (max-width: 44em) {
+  nav[role="full-horizontal"] {
+    ul > li {
+      width: 100%;
+    }
+  }
+}
 .page-title {
    max-width: 100%;
    color: #fafafa;
