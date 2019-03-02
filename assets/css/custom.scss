@@ -15,16 +15,25 @@ header h1 {
  h2 {
    text-decoration: underline;
  }
-img {
-  width: 25%
-}
-.resource-list {
-  float: left;
-  width: 66%;
-  padding-left: 20px;
-}
+ img {
+   max-width: 100%;
+   height: auto;
+ }
 .resource {
   margin: 2.5%;
+}
+.content-right {
+  @media all and (min-width: 960px) {
+    width: 66%;
+    float: left;
+    padding-right: 20px;
+  }
+}
+.img-left {
+  @media all and (min-width: 960px) {
+    width: 33%;
+    float: right;
+    }
 }
  #banner
 .button {
@@ -34,6 +43,11 @@ img {
    padding: 5%;
    margin: 5% auto;
 }
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}
 footer {
    display:block;
- }
+}
