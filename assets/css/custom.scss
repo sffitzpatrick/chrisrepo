@@ -1,20 +1,13 @@
 ---
 ---
 header h1 {
-   max-width: 100%;
+   min-width: 100%;
    font-size: 50px;
    overflow: visible;
    color: #FFE788;
 }
-@media screen and (max-width: 44em) {
-  nav[role="full-horizontal"] {
-    ul > li {
-      width: 100%;
-    }
-  }
-}
 .page-title {
-   max-width: 100%;
+   min-width: 100%;
    color: #fafafa;
    background-color: #4276b6;
    text-align: center;
@@ -50,8 +43,7 @@ header h1 {
    padding: 5%;
    margin: 5% auto;
 }
-.clearfix::after {
-   content: "";
+.clearfix:after {
    clear: both;
    display: table;
 }
