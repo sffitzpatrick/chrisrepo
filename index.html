@@ -6,64 +6,10 @@ layout: default
 <h1>Directory of Resources</h1>
 </div>
 
- <div class="resource">
-    <div class="content-right">
-      <h2 id="duolingo">Duolingo</h2>
-       <p><a href="https://www.duolingo.com/">https://www.duolingo.com/</a></p>
-    </div>
-    <div class="image-left">
-      <img src="assets/images/duolingo.jpg" alt="The Duolingo app logo" title="Duolingo logo" />
-    </div>
- </div>
+<b>Browse the resources below:</b>
 
-  <div class="resource">
-    <div class="content-right">
-      <h2 id="the-fsi-courses">The FSI Courses</h2>
-       <p><a href="https://fsi-languages.yojik.eu/languages/fsi.html">https://fsi-languages.yojik.eu/languages/fsi.html</a></p>
-    </div>
-    <div class="image-left">
-      <img src="assets/images/fsi.jpg" alt="The Department of State logo" title="Department of State logo" />
-    </div>
-  </div>
-
-  <div class="resource">
-    <div class="content-right">
-      <h2 id="anki">Anki</h2>
-       <p><a href="https://apps.ankiweb.net/">https://apps.ankiweb.net/</a></p>
-    </div>
-    <div class="image-left">
-      <img src="assets/images/anki.jpg" alt="The Anki app logo" title="Anki logo" />
-    </div>
-  </div>
-
-  <div class="resource">
-    <div class="content-right">
-      <h2 id="babbel">Babbel</h2>
-       <p><a href="https://www.babbel.com/">https://www.babbel.com/</a></p>
-    </div>
-    <div class="image-left">
-      <img src="assets/images/babbel.jpg" alt="The Babbel app logo" title="Babbel logo" />
-       </div>
-    </div>
-
-  <div class="resource">
-    <div class="content-right">
-      <h2 id="hellotalk">HelloTalk</h2>
-       <p><a href="https://www.hellotalk.com/">https://www.hellotalk.com/</a></p>
-    </div>
-    <div class="image-left">
-      <img src="assets/images/hellotalk.jpg" alt="The HelloTalk app logo" title="HelloTalk logo" />
-    </div>
-  </div>
-
-  <div class="resource">
-    <div class="content-right">
-      <h2 id="google-translate">Google Translate</h2>
-       <p><a href="https://translate.google.com/">https://translate.google.com/</a></p>
-    </div>
-    <div class="image-left">
-      <img src="assets/images/googletranslate.jpg" alt="The Google Translate app logo" title="Google Translate logo" />
-    </div>
-  </div>
-
-  <div class="clearfix"</div>
+{% for lang_resource in site.lang_resources %}
+  <h2>{{ lang_resource.title }}</h2>
+  <p>{{ lang_resource.content }}</p>
+  <a href="{{ lang_resource.source}}" target="_blank">source</a>
+{% endfor %}
