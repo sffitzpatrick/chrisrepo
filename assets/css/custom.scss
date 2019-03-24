@@ -23,16 +23,17 @@ header h1 {
 .resource {
   margin: 2.5%;
 }
-.content-right {
+.img-right teaser-image  {
+  @media all and (min-width: 960px) {
+    width:33%;
+    float: right;
+  }
+}
+.teaser-content {
   @media all and (min-width: 960px) {
     width: 66%;
     float: left;
-  }
-}
-.img-left {
-  @media all and (min-width: 960px) {
-    width: 33%;
-    float: right;
+    padding-left: 20px;
     }
 }
 .button {
@@ -59,7 +60,12 @@ nav.main-navigation {
     width: 70%;
     float: right;
     }
-.clearfix:after {
+.card.bg-danger, .card .card-header-danger, .card.card-rotate.bg-danger .back, .card.card-rotate.bg-danger .front {
+    background: linear-gradient(60deg,#4276b6,#ffe788);
+    box-shadow: none;
+      }
+.clearfix::after {
+   content: "";
    clear: both;
    display: table;
 }

@@ -1,7 +1,9 @@
 ---
 title: Hello Talk
+layout: default
 source: https://www.hellotalk.com/
-category:
+category: Immersive
+image: /assets/images/hellotalk.jpg
 ---
 Learn a language, explore new cultures, and make friends around the world:
 

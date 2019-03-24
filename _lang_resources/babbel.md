@@ -1,7 +1,9 @@
 ---
 title: Babbel
+layout: default
 source: https://about.babbel.com/en/
-category:
+category: Linear-Lessons
+image: /assets/images/babbel.jpg
 ---
 Babbel was among the first to pioneer online language learning, creating a powerful app that combines communicative didactics, cognitivism, behaviorism and constructivism. Progressive lessons are connected together as an interlinking framework, with each step building towards the next. This guarantees learners the shortest path to real-life conversations by:
 

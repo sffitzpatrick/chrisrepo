@@ -6,10 +6,60 @@ layout: default
 <h1>Directory of Resources</h1>
 </div>
 
-<b>Browse the resources below:</b>
+<p><b>Browse the resources below:</b></p>
 
-{% for lang_resource in site.lang_resources %}
-  <h2>{{ lang_resource.title }}</h2>
-  <p>{{ lang_resource.content }}</p>
-  <a href="{{ lang_resource.source}}" target="_blank">source</a>
-{% endfor %}
+<div class="card card-nav-tabs card-plain">
+  <div class="card-header card-header-danger">
+      <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+      <div class="nav-tabs-navigation">
+        <div class="nav-tabs-wrapper">
+          <ul class="nav nav-tabs" data-tabs="tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#alpha" data-toggle="tab">Sort alphabetically</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#type" data-toggle="tab">Sort by Resource Type</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card-body ">
+      <div class="tab-content">
+        <div class="tab-pane active" id="alpha">
+          {% for lang_resource in site.lang_resources %}
+           <div class="resource-teaser clearfix">
+             <div class="teaser-content">
+               <h2><a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page">{{ lang_resource.title }}</a></h2>
+               <p>{{ lang_resource.content | truncatewords: 45, '...' }}</p>
+               <p><a href="{{ lang_resource.source}}" target="_blank">source</a></p>
+               <p><small> Type of Resource: <em>{{ lang_resource.category }}</em></small></p>
+             <div class="img-right teaser-image">
+                 <a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page"><img src="{{ lang_resource.image | relative_url }}" alt="resource logo {{ lang_resource.title }}" /></a>
+              </div>
+            </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="tab-pane" id="type">
+          {% assign sorted_resources = site.lang_resources | sort: "category" %}
+          {% for lang_resource in sorted_resources %}
+           <div class="resource-teaser clearfix">
+             <div class="teaser-content">
+               <h2><a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page">{{ lang_resource.title }}</a></h2>
+               <p>{{ lang_resource.content | truncatewords: 45, '...' }}</p>
+               <p><small> Type of Resource: <em>{{ lang_resource.category }}</em></small></p>
+               <p><a href="{{ lang_resource.source}}" target="_blank">source</a></p>
+             <div class="img-right teaser-image">
+                 <a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page"><img src="{{ lang_resource.image | relative_url }}" alt="resource logo {{ lang_resource.title }}" /></a>
+              </div>
+            </div>
+            </div>
+          {% endfor %}
+        <p>Coming Soon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
