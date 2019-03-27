@@ -1,3 +1,7 @@
 theme: jekyll-theme-leap-day
 title: Top Free Language Learning Resources
 repository: cbiersdorf/chrisrepo
+collections:
+  lang_resources:
+    output: true
+    layout: lang_resources

@@ -1,0 +1,74 @@
+---
+---
+header h1 {
+   min-width: 100%;
+   font-size: 300%;
+   white-space: normal;
+   overflow: visible;
+   color: #FFE788;
+}
+.page-title {
+   color: #fafafa;
+   background-color: #4276b6;
+   text-align: center;
+   border: 1px solid #dba500;
+}
+ h2 {
+   text-decoration: underline;
+ }
+ img {
+   max-width: 100%;
+   height: auto;
+ }
+.resource {
+  margin: 2.5%;
+}
+.img-right teaser-image  {
+  @media all and (min-width: 960px) {
+    width:33%;
+    float: right;
+  }
+}
+.teaser-content {
+  @media all and (min-width: 960px) {
+    width: 66%;
+    float: left;
+    padding-left: 20px;
+    }
+}
+.button {
+border: 1px solid #dba500;
+background: linear_gradient(#ffe788, #ffce38);
+border-radius: 2px;
+box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
+background-color: #FFE788;
+width: 15%;
+min-width: 200px;
+display: inline-block;
+padding: 5%;
+margin: 5% auto;
+color: #333;
+font-weight: bold;
+display: inline-block;
+text-align: center;
+}
+nav.main-navigation {
+    width: 30%;
+    float: left;
+}
+.wrapper {
+    width: 70%;
+    float: right;
+    }
+.card.bg-danger, .card .card-header-danger, .card.card-rotate.bg-danger .back, .card.card-rotate.bg-danger .front {
+    background: linear-gradient(60deg,#4276b6,#ffe788);
+    box-shadow: none;
+      }
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+footer {
+   display:block;
+}
